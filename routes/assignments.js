@@ -1,7 +1,7 @@
 let Assignment = require('../model/assignment');
 
 // Récupérer tous les assignments (GET)
-function getAssignmentsPaginated(req, res){
+function getAssignments(req, res){
     var aggregateQuery = Assignment.aggregate();
     Assignment.aggregatePaginate(aggregateQuery,
       {
